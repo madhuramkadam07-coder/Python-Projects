@@ -63,9 +63,71 @@ else :
 
 #Program 5: Print Numbers Using for Loop
 #Print numbers from 1 to 10.
+
 print("Displaying Numbers from 1 to 10")
 for i in range (1,11):
     print(i)
+
+#Program 6: Leap Year Checker 
+
+year = int(input("Enter a year: "))
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(year, "is a Leap Year")
+else:
+    print(year, "is Not a Leap Year")
+
+#Program 7: Smallest of Three Numbers
+
+a = int(input("Enter first digit"))
+b = int(input("Enter second digit"))
+c = int(input("Enter third digit"))
+
+if a <= b and a <= c :
+    print(a ,"is smaller")
+elif b <= a and b <= c:
+    print( b," is smaller")
+else :
+    print(c," is smaller")
+
+#Program 8: Divisible by 5 and 11
+
+num = int(input("Enter a number"))
+if num % 5 == 0 and num % 11 == 0 :
+    print("Number is divisible by ", 5 , 11)
+else :
+    print("Number is not divisible by ",5,11)
+
+#Program 9: Electricity Bill Calculator
+
+unit = int(input("Enter a unit"))
+if unit <= 100:
+    rate = 5
+elif unit <= 200:
+    rate - 7
+else:
+    rate = 10
+   
+Electricity_bill = unit * rate
+print("Rate per unit = ",rate)
+print("Bill =",Electricity_bill)
+
+#Program 10: BMI Calculator
+
+weight = float(input("Enter the weight"))
+height = float(input("Enter the height"))
+BMI = weight / (height * height)
+print("BMI =", round (BMI,2))
+
+if BMI < 18.5 :
+    print(BMI,"is underweight")
+elif BMI < 25 :
+    print(BMI,"is normal weight")
+elif BMI < 30 :
+    print(BMI,"is overweight")
+else:
+    print(BMI,"is Obses")
+
 
 #ATM Mini System
 #Requirements:
