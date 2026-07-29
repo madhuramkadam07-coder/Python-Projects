@@ -52,6 +52,70 @@ while i >= 1:
   print(i)
   i = i - 1
 
+  # Program 6: Print Even Numbers (1-100)
+
+print("Even Numbers from 1 to 100")
+
+i = 1
+
+while i <= 100:
+    if i % 2 == 0:
+        print(i)
+    i += 1
+
+    # Program 7: Print Odd Numbers (1-100)
+
+print("Odd Numbers from 1 to 100")
+
+i = 1
+
+while i <= 100:
+    if i % 2 != 0:
+        print(i)
+    i += 1
+
+    # Program 8: Prime Number Checker
+
+num = int(input("Enter a number: "))
+
+count = 0
+i = 1
+
+while i <= num:
+    if num % i == 0:
+        count += 1
+    i += 1
+
+if count == 2:
+    print(num, "is a Prime Number")
+else:
+    print(num, "is Not a Prime Number")
+
+    # Program 9: Count Digits
+
+num = int(input("Enter a number: "))
+
+count = 0
+
+while num > 0:
+    num = num // 10
+    count += 1
+
+print("Number of digits =", count)
+
+# Program 10: Reverse a Number
+
+num = int(input("Enter a number: "))
+
+reverse = 0
+
+while num > 0:
+    digit = num % 10
+    reverse = (reverse * 10) + digit
+    num = num // 10
+
+print("Reverse number =", reverse)
+
   #Number Guessing Game
 #Requirements
 #Store a secret number (for example 7).
