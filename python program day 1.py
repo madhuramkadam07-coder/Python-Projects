@@ -70,6 +70,53 @@ print("Details of rectangle")
 print("Area of rectangle:" , length*width)
 print("Perimeter of rectagle:",2*(length+width))
 
+#Program 6: Swap Two Numbers (Without Third Variable)
+#Take two numbers and swap their values.
+
+a = int(input("Enter first number"))
+b = int(input("Enter second number"))
+a = a + b
+b = a - b
+a = a - b
+print("After swapping")
+print("a=",a)
+print("b=",b)
+
+#Program 7: Celsius to Fahrenheit
+#Formula:
+#F = (C × 9/5) + 32
+
+celsius = float(input("Enter the celsius unit"))
+fahrenhite = (celsius * 9 / 5) +32
+print("Temperature of Fahrenheit is ",fahrenhite)
+
+#Program 8: Simple Interest Calculator
+#Formula:
+#SI = (P × R × T) / 100
+
+principal = float(input("Value of principal:"))
+rate = float(input("Value of rate "))
+time = float(input("Value of time "))
+
+SI = (principal * rate * time) / 100
+print("Value of SI is",SI)
+
+#Program 9: Circle Area & Circumference
+
+radius = int(input("Enter radius of radius"))
+PI = 3.14
+area = PI * radius * radius
+circumference = 2 * PI * radius
+
+print("Area and Circumference of circle is", area,circumference)
+
+#Program 10: Currency Converter
+#Convert Indian Rupees to US Dollars.
+
+rupees = float(input("Enter the amount in rupees"))
+usd = rupees / 83
+print("Amount in dollar ($)",round(usd,2))
+
 #Student Information System
 print("========Student information system=====")
 name = str(input("Enter the name of student:"))
