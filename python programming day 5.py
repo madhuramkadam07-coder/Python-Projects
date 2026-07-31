@@ -91,7 +91,7 @@ print("Reversed List:", numbers)
 marks = []
 
 for i in range(1, 6):
-    mark = float(input(f"Enter marks of Subject {i}: "))
+    mark = float(input("Enter marks of Subject {i}: "))
     marks.append(mark)
 
 total = sum(marks)
